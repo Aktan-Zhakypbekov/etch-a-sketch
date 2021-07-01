@@ -24,11 +24,15 @@
           <div class="optionsDiv">
             <button id="rainbow" class="options">Rainbow</button>
           </div>
-          <div class="optionsDiv">
-            <button id="colorPicker" class="options">Pick a color</button>
+          <div class="optionsDiv" id="colorPickerDiv">
+            <div id="colorPickerDivInner">
+              <div>Pick a Color</div>
+              <input id="colorPicker" type="color"></input>      
+            </div>
           </div>
           <div class="optionsDiv">
-            <button id="chartSize" class="options">Pick the size</button>
+            <input type="range" min="10" max="50" value="32" id="sizePicker"></input>
+            <div id="sizePickerNumber"></div>
           </div>
           <div class="optionsDiv">
             <button id="clear" class="options">Clear</button>

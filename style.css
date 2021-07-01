@@ -25,10 +25,10 @@ main {
 #optionsMenu {
   background-color: rgb(21, 3, 70);
   width: 300px;
-  height: 500px;
+  height: 550px;
   margin: 20px;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 3fr 3fr 2fr;
   border: 10px solid rgb(0, 0, 32);
 }
 #chart {
@@ -53,6 +53,8 @@ main {
   font-size: 17px;
   width: 230px;
   height: 60px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 17px;
 }
 .options:hover {
   text-shadow: 0 0 6px rgb(180, 5, 180);
@@ -65,4 +67,61 @@ footer {
 }
 footer div {
   margin-top: 65px;
+}
+#colorPickerDivInner {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 230px;
+  height: 100px;
+  border: 3px solid rgb(0, 0, 32);
+  background-color: rgb(13, 2, 44);
+}
+#colorPickerDivInner:hover {
+  text-shadow: 0 0 6px rgb(180, 5, 180);
+  box-shadow: 0 0 4px purple;
+}
+#colorPickerDivInner div {
+  height: 30%;
+  border-bottom: 3px solid rgb(0, 0, 32);
+  text-align: center;
+  padding-top: 6px;
+  font-size: 17px;
+}
+#colorPicker {
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 226px;
+  height: 70%;
+}
+#sizePickerNumber {
+  margin-left: 6px;
+  font-size: 17px;
+  width: 30px;
+  text-align: center;
+}
+#sizePicker {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 15px;
+  background: rgb(79, 2, 109);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  margin-right: 5px;
+}
+
+#sizePicker:hover {
+  opacity: 1;
+}
+
+#sizePicker::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: rgba(204, 7, 99, 0.945);
+  cursor: pointer;
 }
