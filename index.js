@@ -20,7 +20,11 @@ function createInitialChartFunction() {
   let cellDivList0 = document.querySelectorAll(".cellDiv");
   cellDivList0.forEach((cellDiv0) => {
     cellDiv0.addEventListener("mouseover", () => {
-      cellDiv0.style.backgroundColor = color;
+      if (color === "random") {
+        cellDiv0.style.backgroundColor = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
+      } else {
+        cellDiv0.style.backgroundColor = color;
+      }
     });
   });
 }
@@ -69,7 +73,7 @@ function rainbowOptionFunction() {
         cellDiv2.style.backgroundColor = `rgb(${randomColor()}, ${randomColor()}, ${randomColor()})`;
       });
     });
-    color = randomColor;
+    color = "random";
   });
 }
 
